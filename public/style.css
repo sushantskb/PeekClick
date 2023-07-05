@@ -1,0 +1,46 @@
+#root{
+    background-color: rgb(87, 99, 155);
+}
+.navbar {
+    position: relative;
+    z-index: 2;
+    margin: -35px auto;
+}
+.carousel{
+    max-width: 1331px;
+    margin: auto;
+}
+.carousel-item img{
+    border-radius: 76px;
+}
+.image{
+    height: 649px;
+}
+.content{
+    margin-top: 136px;
+}
+.tittle{
+    display: flex;
+    flex-direction: column;
+    font-size: 66px;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.work-container{
+    margin-top: 4px;
+    margin-left: -20px;
+}
+.work-content{
+    background-color: #94bfe5;
+    box-shadow: 12px black;
+}
+@media (min-width: 1020px){
+    .sign-up{
+        background: black;
+    }
+    .content{
+        margin-top: 80px;
+    }
+}
