@@ -9,6 +9,9 @@ function App() {
             <Navbar />
             <Slider />
             <Content />
+            <div>
+                <h1 className="tittle">Works</h1>
+            </div>
             <Works
                 mainImage="https://source.unsplash.com/700x350/?city"
                 img="https://img.people-group.com/images/Leadership/anupam-mittal.jpg"
