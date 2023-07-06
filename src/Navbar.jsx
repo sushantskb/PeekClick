@@ -13,7 +13,7 @@ function Navbar(){
                             href="/"
                             aria-label="Our product"
                             title="Our product"
-                            class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-blue-accent-400"
+                            class="link font-medium tracking-wide text-white"
                         >
                             About
                         </a>
@@ -23,7 +23,7 @@ function Navbar(){
                             href="/"
                             aria-label="Our product"
                             title="Our product"
-                            class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="link font-medium tracking-wide text-white"
                         >
                             Contact
                         </a>
@@ -33,7 +33,7 @@ function Navbar(){
                             href="/"
                             aria-label="Product pricing"
                             title="Product pricing"
-                            class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="link font-medium tracking-wide text-white"
                         >
                             Photos
                         </a>
@@ -70,7 +70,7 @@ function Navbar(){
                             href="/"
                             aria-label="Sign in"
                             title="Sign in"
-                            class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="sign-in-btn font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                             Sign in
                         </a>
@@ -78,7 +78,7 @@ function Navbar(){
                     <li>
                         <a
                             href="/"
-                            class="sign-up inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                            class="button sign-up inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                             aria-label="Sign up"
                             title="Sign up"
                             style={{background:"black"}}>
@@ -164,7 +164,7 @@ function Navbar(){
                                                 title="Our product"
                                                 class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                             >
-                                                Product
+                                                About
                                             </a>
                                         </li>
                                         <li>
@@ -174,7 +174,7 @@ function Navbar(){
                                                 title="Our product"
                                                 class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                             >
-                                                Features
+                                                Contact
                                             </a>
                                         </li>
                                         <li>
@@ -184,7 +184,7 @@ function Navbar(){
                                                 title="Product pricing"
                                                 class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                             >
-                                                Pricing
+                                                Photos
                                             </a>
                                         </li>
                                         <li>
@@ -200,7 +200,7 @@ function Navbar(){
                                         <li>
                                             <a
                                                 href="/"
-                                                class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                                                class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                                                 aria-label="Sign up"
                                                 title="Sign up"
                                             >

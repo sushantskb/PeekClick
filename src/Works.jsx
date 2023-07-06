@@ -24,7 +24,7 @@ function Works(props) {
                                     <div class="text-sm text-gray-500 mt-4 m-2"><a href="#">{props.details}</a></div>
                                     <div class="flex cursor-pointer">
                                         <div class="m-2"> <img src={props.img} alt=""
-                                            class=" rounded-full w-20" /> </div>
+                                            class="round-img" /> </div>
                                         <div class="grid m-1">
                                             <div class="font-bold text-sm hover:text-gray-600 mt-2">{props.name}</div>
                                             <div class=" text-sm hover:text-gray-600">

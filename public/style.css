@@ -1,25 +1,37 @@
-#root{
+#root {
     background-color: rgb(87, 99, 155);
 }
+
 .navbar {
     position: relative;
     z-index: 2;
     margin: -35px auto;
 }
-.carousel{
+
+.carousel {
     max-width: 1331px;
     margin: auto;
 }
-.carousel-item img{
+
+.carousel-item img {
     border-radius: 76px;
 }
-.image{
+
+.image {
     height: 649px;
 }
-.content{
+
+.round-img {
+    height: 58px;
+    border-radius: 50%;
+    width: 55px;
+}
+
+.content {
     margin-top: 136px;
 }
-.tittle{
+
+.tittle {
     display: flex;
     flex-direction: column;
     font-size: 66px;
@@ -28,19 +40,164 @@
     align-items: center;
     margin-top: 20px;
 }
-.work-container{
+
+.work-container {
     margin-top: 4px;
     margin-left: -20px;
 }
-.work-content{
+
+.work-content {
     background-color: #94bfe5;
     box-shadow: 12px black;
 }
-@media (min-width: 1020px){
-    .sign-up{
+
+.footer-bg {
+    background-color: rgb(87, 99, 155);
+}
+
+/* --hover effect-- */
+.link {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.link:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #1b07b1;
+    height: 4px;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.link:hover:before,
+.link:focus:before,
+.link:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+/* for button */
+@-webkit-keyframes hvr-back-pulse {
+    50% {
+        background-color: rgba(85, 32, 209, 0.75);
+    }
+}
+
+@keyframes hvr-back-pulse {
+    50% {
+        background-color: rgba(85, 32, 209, 0.75);
+    }
+}
+
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    -webkit-animation-name: hvr-back-pulse;
+    animation-name: hvr-back-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.8s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: #2098D1;
+    background-color: #2098d1;
+    color: white;
+}
+
+@-webkit-keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.sign-in-btn {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.sign-in-btn:hover,
+.sign-in-btn:focus,
+.sign-in-btn:active {
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+/* --footer-- */
+.icons {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+  }
+  .icons:hover, .icons:focus, .icons:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+/* --end-- */
+@media (min-width: 1020px) {
+    .sign-up {
         background: black;
     }
-    .content{
+
+    .content {
         margin-top: 80px;
     }
 }
