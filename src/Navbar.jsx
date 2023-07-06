@@ -93,7 +93,7 @@ function Navbar(){
                         class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
                         onClick={() => setIsMenuOpen(true)}
                     >
-                        <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                        <svg class="w-5 text-gray-900" viewBox="0 0 24 24">
                             <path
                                 fill="currentColor"
                                 d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
@@ -162,7 +162,7 @@ function Navbar(){
                                                 href="/"
                                                 aria-label="Our product"
                                                 title="Our product"
-                                                class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                class="link font-medium tracking-wide text-gray-700"
                                             >
                                                 About
                                             </a>
@@ -172,7 +172,7 @@ function Navbar(){
                                                 href="/"
                                                 aria-label="Our product"
                                                 title="Our product"
-                                                class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                class="link font-medium tracking-wide text-gray-700"
                                             >
                                                 Contact
                                             </a>
@@ -182,7 +182,7 @@ function Navbar(){
                                                 href="/"
                                                 aria-label="Product pricing"
                                                 title="Product pricing"
-                                                class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                class="link font-medium tracking-wide text-gray-700"
                                             >
                                                 Photos
                                             </a>
@@ -192,7 +192,7 @@ function Navbar(){
                                                 href="/"
                                                 aria-label="Sign in"
                                                 title="Sign in"
-                                                class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                class="sign-in-btn font-medium tracking-wide text-gray-700"
                                             >
                                                 Sign in
                                             </a>
@@ -200,7 +200,7 @@ function Navbar(){
                                         <li>
                                             <a
                                                 href="/"
-                                                class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                                                class="button inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                                                 aria-label="Sign up"
                                                 title="Sign up"
                                             >
