@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar(){
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -9,38 +10,38 @@ function Navbar(){
             <div class="navbar relative flex grid items-center grid-cols-2 lg:grid-cols-3">
                 <ul class="flex items-center hidden space-x-8 lg:flex">
                     <li>
-                        <a
-                            href="/"
+                        <Link
+                            to="/about"
                             aria-label="Our product"
                             title="Our product"
                             class="link font-medium tracking-wide text-white"
                         >
                             About
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a
-                            href="/"
+                        <Link
+                            to="/contact"
                             aria-label="Our product"
                             title="Our product"
                             class="link font-medium tracking-wide text-white"
                         >
                             Contact
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a
-                            href="/"
+                        <Link
+                            to="/photos"
                             aria-label="Product pricing"
                             title="Product pricing"
                             class="link font-medium tracking-wide text-white"
                         >
                             Photos
-                        </a>
+                        </Link>
                     </li>
                 </ul>
-                <a
-                    href="/"
+                <Link
+                    to="/"
                     aria-label="Company"
                     title="Company"
                     class="inline-flex items-center lg:mx-auto"
@@ -63,27 +64,27 @@ function Navbar(){
                     <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                        PeekClick
                     </span>
-                </a>
+                </Link>
                 <ul class="flex items-center hidden ml-auto space-x-8 lg:flex">
                     <li>
-                        <a
-                            href="/"
+                        <Link
+                            to="/signIn"
                             aria-label="Sign in"
                             title="Sign in"
                             class="sign-in-btn font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                             Sign in
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a
-                            href="/"
+                        <Link
+                            to="/signUp"
                             class="button sign-up inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                             aria-label="Sign up"
                             title="Sign up"
                             style={{background:"black"}}>
                             Sign up
-                        </a>
+                        </Link>
                     </li>
                 </ul>
                 <div class="ml-auto lg:hidden">
@@ -113,8 +114,8 @@ function Navbar(){
                             <div class="p-5 bg-white border rounded shadow-sm">
                                 <div class="flex items-center justify-between mb-4">
                                     <div>
-                                        <a
-                                            href="/"
+                                        <Link
+                                            to="/"
                                             aria-label="Company"
                                             title="Company"
                                             class="inline-flex items-center"
@@ -137,7 +138,7 @@ function Navbar(){
                                             <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                                                 Company
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div>
                                         <button
@@ -158,54 +159,54 @@ function Navbar(){
                                 <nav>
                                     <ul class="space-y-4">
                                         <li>
-                                            <a
-                                                href="/"
+                                            <Link
+                                                to="/about"
                                                 aria-label="Our product"
                                                 title="Our product"
                                                 class="link font-medium tracking-wide text-gray-700"
                                             >
                                                 About
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a
-                                                href="/"
+                                            <Link
+                                                to="/contact"
                                                 aria-label="Our product"
                                                 title="Our product"
                                                 class="link font-medium tracking-wide text-gray-700"
                                             >
                                                 Contact
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a
-                                                href="/"
+                                            <Link
+                                                to="/photos"
                                                 aria-label="Product pricing"
                                                 title="Product pricing"
                                                 class="link font-medium tracking-wide text-gray-700"
                                             >
                                                 Photos
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a
-                                                href="/"
+                                            <Link
+                                                to="/signIn"
                                                 aria-label="Sign in"
                                                 title="Sign in"
                                                 class="sign-in-btn font-medium tracking-wide text-gray-700"
                                             >
                                                 Sign in
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a
-                                                href="/"
+                                            <Link
+                                                to="/signUp"
                                                 class="button inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                                                 aria-label="Sign up"
                                                 title="Sign up"
                                             >
                                                 Sign up
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </nav>

@@ -1,4 +1,4 @@
-#root {
+#root, html {
     background-color: rgb(87, 99, 155);
 }
 
@@ -189,10 +189,21 @@
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-  }
+}
+
+/* --contact-page css-- */
+.contact-container{
+    margin: 50px auto;
+}
+.contact-img{
+    height: 18rem !important;
+    width: 25rem;
+    margin: auto -5px;
+}
+/* --end-- */
 
 /* --end-- */
-@media (min-width: 1020px) {
+@media only screen and (min-width: 1020px) {
     .sign-up {
         background: black;
     }
