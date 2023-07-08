@@ -190,6 +190,7 @@
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+/* --end-- */
 
 /* --contact-page css-- */
 .contact-container{
@@ -202,6 +203,16 @@
 }
 /* --end-- */
 
+/* --photos container-- */
+.photos-container{
+    background-color: rgb(87, 99, 155);
+}
+.card-desc{
+    background-color: rgb(54, 63, 108);
+}
+.section{
+    background-color: rgb(49, 52, 65);
+}
 /* --end-- */
 @media only screen and (min-width: 1020px) {
     .sign-up {

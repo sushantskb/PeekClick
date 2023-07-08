@@ -1,11 +1,13 @@
 import React from "react";
 import  ReactDOM  from "react-dom";
 import App from "./App.jsx";
-import Contact from "./Contact.jsx"
+import Contact from "./Contact.jsx";
+import Photos from "./Photos.jsx";
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 
 const router = createBrowserRouter([
   {
@@ -15,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "contact",
     element: <Contact />,
+  },
+  {
+    path: "photos",
+    element: <Photos />,
   },
 ]);
 
