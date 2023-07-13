@@ -214,6 +214,19 @@
     background-color: rgb(49, 52, 65);
 }
 /* --end-- */
+
+/* --about section-- */
+.about-img {
+    height: 156%!important;
+    width: 47%!important;
+}
+.img-cont{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+/* --end-- */
+
 @media only screen and (min-width: 1020px) {
     .sign-up {
         background: black;

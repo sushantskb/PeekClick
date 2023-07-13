@@ -3,6 +3,7 @@ import  ReactDOM  from "react-dom";
 import App from "./App.jsx";
 import Contact from "./Contact.jsx";
 import Photos from "./Photos.jsx";
+import About from "./About.jsx";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "photos",
     element: <Photos />,
+  },
+  {
+    path: "about",
+    element: <About />,
   },
 ]);
 
