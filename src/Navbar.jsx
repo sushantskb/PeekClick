@@ -13,7 +13,7 @@ function Navbar(){
                             to="/about"
                             aria-label="Our product"
                             title="Our product"
-                            class="link font-medium tracking-wide text-white"
+                            class="link font-medium tracking-wide text hover:text-purple-500"
                         >
                             About
                         </Link>
@@ -23,7 +23,7 @@ function Navbar(){
                             to="/contact"
                             aria-label="Our product"
                             title="Our product"
-                            class="link font-medium tracking-wide text-white"
+                            class="link font-medium tracking-wide text hover:text-purple-500"
                         >
                             Contact
                         </Link>
@@ -33,7 +33,7 @@ function Navbar(){
                             to="/photos"
                             aria-label="Product pricing"
                             title="Product pricing"
-                            class="link font-medium tracking-wide text-white"
+                            class="link font-medium tracking-wide text hover:text-purple-500"
                         >
                             Photos
                         </Link>
@@ -67,22 +67,13 @@ function Navbar(){
                 <ul class="flex items-center hidden ml-auto space-x-8 lg:flex">
                     <li>
                         <Link
-                            to="/signIn"
-                            aria-label="Sign in"
-                            title="Sign in"
-                            class="sign-in-btn font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                            Sign in
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
                             to="/signUp"
                             class="button sign-up inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                             aria-label="Sign up"
                             title="Sign up"
-                            style={{background:"black"}}>
-                            Sign up
+                            style={{background:"black"}}
+                        >
+                            Logout
                         </Link>
                     </li>
                 </ul>
@@ -162,7 +153,7 @@ function Navbar(){
                                                 to="/about"
                                                 aria-label="Our product"
                                                 title="Our product"
-                                                class="link font-medium tracking-wide text-gray-700"
+                                                class="link font-medium tracking-wide text-black hover:text-purple-500"
                                             >
                                                 About
                                             </Link>
@@ -172,7 +163,7 @@ function Navbar(){
                                                 to="/contact"
                                                 aria-label="Our product"
                                                 title="Our product"
-                                                class="link font-medium tracking-wide text-gray-700"
+                                                class="link font-medium tracking-wide text-black hover:text-purple-500"
                                             >
                                                 Contact
                                             </Link>
@@ -182,20 +173,12 @@ function Navbar(){
                                                 to="/photos"
                                                 aria-label="Product pricing"
                                                 title="Product pricing"
-                                                class="link font-medium tracking-wide text-gray-700"
+                                                class="link font-medium tracking-wide text-black hover:text-purple-500"
                                             >
                                                 Photos
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link
-                                                to="/signIn"
-                                                aria-label="Sign in"
-                                                title="Sign in"
-                                                class="sign-in-btn font-medium tracking-wide text-gray-700"
-                                            >
-                                                Sign in
-                                            </Link>
                                         </li>
                                         <li>
                                             <Link
@@ -204,7 +187,7 @@ function Navbar(){
                                                 aria-label="Sign up"
                                                 title="Sign up"
                                             >
-                                                Sign up
+                                                Logout
                                             </Link>
                                         </li>
                                     </ul>

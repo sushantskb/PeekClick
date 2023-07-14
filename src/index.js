@@ -4,6 +4,8 @@ import App from "./App.jsx";
 import Contact from "./Contact.jsx";
 import Photos from "./Photos.jsx";
 import About from "./About.jsx";
+import Register from "./Register.jsx"
+import Login from "./Login.jsx"
 import {
   createBrowserRouter,
   RouterProvider,
@@ -13,7 +15,7 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Login />,
   },
   {
     path: "contact",
