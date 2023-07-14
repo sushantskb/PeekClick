@@ -184,15 +184,44 @@
 /* --end-- */
 
 /* --about section-- */
-.about-img {
-    height: 156%!important;
-    width: 47%!important;
+.about-card {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    min-height: 653px;
+    border-radius: 1rem;
+    width: 80%;
+    max-width: 761px;
+    margin: 0 auto;
+    background: url(https://i.imgur.com/d6vo3wt.jpg) no-repeat center / cover;
 }
-.img-cont{
-    justify-content: center;
-    display: flex;
-    align-items: center;
+
+.card-body {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 30px;
+    transition: 1s;
 }
+
+.about-card:hover .card-body {
+    height: 50%;
+}
+
+.about-card:hover .view-content {
+    opacity: 1;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+h3 {
+    color: red;
+}
+
+
 /* --end-- */
 
 /* --register page-- */
@@ -210,5 +239,21 @@
 
     .content {
         margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about-card {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about-card {
+        min-height: 779px;
+    }
+
+    .card-body {
+        height: 60%;
     }
 }
