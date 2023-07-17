@@ -23,7 +23,9 @@ function Register() {
                         <div class=" w-full md:w-3/4">
                             <div class="text-xl cursor-pointer flex flex-col justify-center items-center mt-5 md:mt-0 py-4" style={{ marginBottom: "32px" }}>
 
-                                <h1 class="font-semibold text-xl md:text-5xl text-white m-2">Register your Account</h1>
+                                <h1 class="font-semibold text-xl md:text-5xl text-white m-2">
+                                    Register your Account
+                                </h1>
 
                             </div>
                             <div class="flex flex-col justify-center items-center m-2 space-y-6 md:space-y-8" style={{ lineHeight: "50px" }}>

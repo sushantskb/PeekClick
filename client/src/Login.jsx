@@ -18,7 +18,7 @@ function Login() {
                     navigate("/");
                 }
                 
-            }).catch(err=> console.log(err))
+            }).catch(err=> console.log(err));
         e.preventDefault();
     }
     return (
