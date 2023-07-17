@@ -4,7 +4,8 @@ import App from "./App.jsx";
 import Contact from "./Contact.jsx";
 import Photos from "./Photos.jsx";
 import About from "./About.jsx";
-import Register from "./Register.jsx"
+import Register from "./Register.jsx";
+import Login from "./Login.jsx";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Register />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
   {
     path:"/home",

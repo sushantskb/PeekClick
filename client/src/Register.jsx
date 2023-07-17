@@ -1,16 +1,19 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import axios from "axios";
+import {Link, useNavigate} from "react-router-dom";
 function Register() {
     const [username, setUsername] = useState();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
+    const navigate = useNavigate();
     const handleSubmit = (e) => {
+        e.preventDefault();
         axios.post("http://localhost:3001/register", {username, email, password})
         .then(res =>{
-            alert("Created")
-        }).catch(err => console.log(err))
-        e.preventDefault();
+            alert("Created");
+            navigate("/login");
+        }).catch(err => console.log(err));
     }
     return (
         <form onSubmit={handleSubmit}>
@@ -30,6 +33,7 @@ function Register() {
                                         placeholder="User Name"
                                         class=" bg-gray-100 rounded-lg px-5 py-2 focus:border border-blue-600 focus:outline-none text-black placeholder:text-gray-600 placeholder:opacity-50 font-semibold md:w-72 lg:w-[340px]" 
                                         name="username"
+                                        style={{border: "none", outline: "none" }}
                                         onChange={(event)=>{
                                             setUsername(event.target.value)
                                         }}
@@ -64,7 +68,7 @@ function Register() {
                                     type="submit"
                         
                                 >
-                                    Sign In 
+                                    Sign Up 
                                 </button>
                             </div>
 
@@ -72,10 +76,10 @@ function Register() {
                         <div
                             class="h-[100%] w-full md:w-1/3  bg-gradient-to-l from-purple-400 to-blue-400  items-center flex justify-center">
 
-                            <div class="text-white text-base font-semibold text-center my-10 space-y-2 m-2">
+                            <div class="text-white text-base font-semibold text-center my-10 space-y-2 m-2" style={{lineHeight: "51px"}}>
                                 <h1 class="text-5xl">Already have an account ?</h1>
                                 <h1 class="">Login In and explore here</h1>
-                                <button class="bg-white rounded-2xl px-4 text-purple-400 py-1">Login</button>
+                                <Link to="/login" class="bg-white rounded-2xl px-4 text-purple-400 py-1">Login</Link>
                             </div>
 
                         </div>
