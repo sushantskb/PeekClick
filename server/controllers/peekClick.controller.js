@@ -1,6 +1,9 @@
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
 const UserModel = require('../models/PeekUser');
+const ContactModel = require("../models/Contact");
 
-exports.register = (req, res) =>{
+exports.register = (req, res) => {
     const { username, email, password } = req.body;
     console.log(username, email, password);
     bcrypt.hash(password, 10)
@@ -9,11 +12,11 @@ exports.register = (req, res) =>{
                 .then(user => res.json("Success"))
                 .catch(err => res.json(err))
         }).catch(err => {
-                res.json(err)
-    });
+            res.json(err)
+        });
 }
 
-exports.login = (req, res)=>{
+exports.login = (req, res) => {
     const { username, password } = req.body;
     UserModel.findOne({ username: username })
         .then(user => {
@@ -23,7 +26,7 @@ exports.login = (req, res)=>{
                         const token = jwt.sign({ username: user.username, role: user.role },
                             "jwt-secret-key", { expiresIn: '1d' });
                         res.cookie("token", token);
-                        return res.json({Status: "Success", role: user.role});
+                        return res.json({ Status: "Success", role: user.role });
                     } else {
                         return res.json("The password is incorrect");
                     }
@@ -31,5 +34,11 @@ exports.login = (req, res)=>{
             } else {
                 return res.json("No records existed");
             }
-    });
+        });
+}
+
+exports.contact = (req, res) => {
+    const { name, email, message } = req.body;
+    console.log(name, email, message);
+    ContactModel.create({ name, email, message })
 }
